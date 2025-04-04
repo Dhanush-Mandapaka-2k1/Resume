@@ -4,122 +4,377 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dhanush Mandapaka's Resume</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        a:hover {
+            color: #004080;
+            text-decoration: underline;
+        }
+        
+        /* Container */
+        .resume-container {
+            max-width: 850px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        /* Header */
+        .header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            color: #004080;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 15px;
+        }
+        
+        /* Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            color: #004080;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+        }
+        
+        .section-content {
+            padding-left: 5px;
+        }
+        
+        /* Skills Section */
+        .skill-category {
+            margin-bottom: 15px;
+        }
+        
+        .skill-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+        
+        .skill-item {
+            background-color: #f0f7ff;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-size: 14px;
+            border: 1px solid #d0e3ff;
+        }
+        
+        /* Projects */
+        .project {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        
+        .project:last-child {
+            border-bottom: none;
+        }
+        
+        .project-title {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .project ul {
+            padding-left: 20px;
+        }
+        
+        .project li {
+            margin-bottom: 5px;
+        }
+        
+        /* Education */
+        .education-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        
+        .education-item:last-child {
+            border-bottom: none;
+        }
+        
+        .degree {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .school-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            font-size: 15px;
+        }
+        
+        .location {
+            display: block;
+            color: #666;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        /* Other Sections */
+        .courses-section .course-title {
+            font-weight: 600;
+        }
+        
+        .courses-section .course-period {
+            font-style: italic;
+            color: #666;
+            margin: 5px 0;
+        }
+        
+        .courses-section .course-description {
+            font-size: 15px;
+        }
+        
+        .certifications-list {
+            list-style: none;
+        }
+        
+        .certifications-list li {
+            margin-bottom: 10px;
+        }
+        
+        .certifications-list a {
+            font-weight: 600;
+        }
+        
+        .languages-list {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .resume-container {
+                padding: 25px;
+            }
+            
+            .header h1 {
+                font-size: 28px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 8px;
+            }
+            
+            .skills-list {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .skill-item {
+                display: inline-block;
+                margin-bottom: 5px;
+            }
+            
+            .school-info {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f4;">
-    <div style="max-width: 800px; margin: auto; background: white; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-        <div style="margin-bottom: 30px;">
-            <h1 style="font-size: 24px; color: #003366; margin-bottom: 10px;">Dhanush Mandapaka</h1>
-            <p style="line-height: 1.6;">7032591833 | <a href="mailto:mandapakadhanush23583@gmail.com" target="_blank" style="color: #003366; text-decoration: none;">mandapakadhanush23583@gmail.com</a> | <a href="https://www.linkedin.com/in/dhanush-mandapaka-0bab9a244/" target="_blank" style="color: #003366; text-decoration: none;">LinkedIn</a> | Hyderabad, India</p>
+<body>
+    <div class="resume-container">
+        <div class="header">
+            <h1>Dhanush Mandapaka</h1>
+            <div class="contact-info">
+                <span>7032591833</span>
+                <span><a href="mailto:mandapakadhanush23583@gmail.com">mandapakadhanush23583@gmail.com</a></span>
+                <span><a href="https://www.linkedin.com/in/dhanush-mandapaka-0bab9a244/" target="_blank">LinkedIn</a></span>
+                <span>Hyderabad, India</span>
+            </div>
         </div>
         
-        <div style="margin-bottom: 30px;">
-            <h2 style="font-size: 20px; color: #003366; margin-bottom: 10px;">PROFILE</h2>
-            <p style="line-height: 1.6;">Dynamic 2023 graduate passionate about software development, proficient in Java, JDBC, Servlets, SQL, PL/SQL, HTML, and CSS. Highly motivated and detail-oriented, eager to contribute to software projects and continue growing as a developer in an entry-level position.</p>
+        <div class="section">
+            <h2 class="section-title">PROFILE</h2>
+            <div class="section-content">
+                <p>Dynamic 2023 graduate passionate about software development, proficient in Java, JDBC, Servlets, SQL, PL/SQL, HTML, and CSS. Highly motivated and detail-oriented, eager to contribute to software projects and continue growing as a developer in an entry-level position.</p>
+            </div>
         </div>
         
-        <div style="margin-bottom: 30px;">
-            <h2 style="font-size: 20px; color: #003366; margin-bottom: 10px;">SKILLS</h2>
-            <div style="margin-bottom: 10px;">
-                <p style="margin-bottom: 5px;"><strong>Frameworks:</strong></p>
-                <ul style="padding-left: 20px; line-height: 1.6;">
-                    <li>Spring</li>
-                    <li>Spring Boot</li>
-                    <li>Hibernate</li>
-                    <li>RESTful API</li>
+        <div class="section">
+            <h2 class="section-title">SKILLS</h2>
+            <div class="section-content">
+                <div class="skill-category">
+                    <p class="skill-title">Frameworks:</p>
+                    <ul class="skills-list">
+                        <li class="skill-item">Spring</li>
+                        <li class="skill-item">Spring Boot</li>
+                        <li class="skill-item">Hibernate</li>
+                        <li class="skill-item">RESTful API</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <p class="skill-title">Programming Languages:</p>
+                    <ul class="skills-list">
+                        <li class="skill-item">Core Java</li>
+                        <li class="skill-item">SQL</li>
+                        <li class="skill-item">JDBC</li>
+                        <li class="skill-item">Advanced Java</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <p class="skill-title">Web Development:</p>
+                    <ul class="skills-list">
+                        <li class="skill-item">HTML</li>
+                        <li class="skill-item">CSS</li>
+                        <li class="skill-item">Java Servlets</li>
+                        <li class="skill-item">JSP</li>
+                        <li class="skill-item">MVC</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <p class="skill-title">Database:</p>
+                    <ul class="skills-list">
+                        <li class="skill-item">SQL</li>
+                        <li class="skill-item">PL/SQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="section-content">
+                <div class="project">
+                    <h3 class="project-title">School Student Registration Management System</h3>
+                    <ul>
+                        <li>Created a Student Registration System using Spring Boot, Spring JPA, and JSP for smooth operation and interface.</li>
+                        <li>Added features for managing student records like registration, updates, and deletion using Spring Boot and Spring JPA.</li>
+                        <li>Used Oracle Database to design and maintain the database, ensuring data accuracy.</li>
+                        <li>Made the front-end user-friendly and responsive with HTML and CSS.</li>
+                    </ul>
+                </div>
+                
+                <div class="project">
+                    <h3 class="project-title">Login Web Page Development</h3>
+                    <ul>
+                        <li>Built a user-friendly login page using HTML and CSS for the front end.</li>
+                        <li>Developed authentication and registration features with Spring Boot and Spring JPA, connecting to an Oracle Database.</li>
+                        <li>Used Spring Security for secure login and Spring Data JPA to handle database interactions.</li>
+                        <li>Applied JavaBeans and DAO patterns for clean and maintainable code.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="section-content">
+                <div class="education-item">
+                    <p class="degree">Bachelor of Technology - Mechanical Engineering</p>
+                    <div class="school-info">
+                        <span>Sagi Ramakrishnam Raju Engineering College (2019 - 2023)</span>
+                        <span>7.2 CGPA</span>
+                    </div>
+                    <span class="location">Bhimavaram, India</span>
+                </div>
+                
+                <div class="education-item">
+                    <p class="degree">Intermediate - MPC</p>
+                    <div class="school-info">
+                        <span>Aditya Junior College (2017 - 2019)</span>
+                        <span>9.57 GPA</span>
+                    </div>
+                    <span class="location">Palakollu, India</span>
+                </div>
+                
+                <div class="education-item">
+                    <p class="degree">SSC/10th</p>
+                    <div class="school-info">
+                        <span>SunShine School (2016 - 2017)</span>
+                        <span>8.5 GPA</span>
+                    </div>
+                    <span class="location">Palakollu, India</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">CERTIFICATIONS</h2>
+            <div class="section-content">
+                <ul class="certifications-list">
+                    <li><a href="https://drive.google.com/file/d/1sEHmxiG86-Vbv114jER6ypNQcmVHaVUC/view?usp=drive_link" target="_blank">Certification on Java Full Stack</a></li>
+                    <li><a href="https://drive.google.com/file/d/1t4JdJPAXxJr9nVOK5mRqqSEjjCuhFLuW/view?usp=sharing" target="_blank">Java Full Stack Developer Internship</a></li>
+                    <li><a href="https://drive.google.com/file/d/1U2j10f2IBbzqH9-UYJdDg5H4h_P1WwMY/view?usp=drive_link" target="_blank">Software Development Intern</a></li>
                 </ul>
             </div>
-            <div style="margin-bottom: 10px;">
-                <p style="margin-bottom: 5px;"><strong>Programming Languages:</strong></p>
-                <ul style="padding-left: 20px; line-height: 1.6;">
-                    <li>Core Java</li>
-                    <li>SQL</li>
-                    <li>JDBC</li>
-                    <li>Advanced Java</li>
-                </ul>
-            </div>
-            <div style="margin-bottom: 10px;">
-                <p style="margin-bottom: 5px;"><strong>Web Development:</strong></p>
-                <ul style="padding-left: 20px; line-height: 1.6;">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Java Servlets</li>
-                    <li>JSP</li>
-                    <li>MVC</li>
-                </ul>
-            </div>
-            <div style="margin-bottom: 10px;">
-                <p style="margin-bottom: 5px;"><strong>Database:</strong></p>
-                <ul style="padding-left: 20px; line-height: 1.6;">
-                    <li>SQL</li>
-                    <li>PL/SQL</li>
-                </ul>
+        </div>
+        
+        <div class="section courses-section">
+            <h2 class="section-title">COURSES</h2>
+            <div class="section-content">
+                <p class="course-title">Java Full Stack, Naresh I Technologies</p>
+                <p class="course-period">2023 - 2024 | Hyderabad, India</p>
+                <p class="course-description">Comprehensive training in full stack development focusing on Java, including front-end (HTML, CSS, JavaScript) and back-end (Java, SpringBoot, Hibernate, SQL) technologies. Built dynamic web applications with hands-on projects.</p>
             </div>
         </div>
         
-        <div style="margin-bottom: 30px;">
-            <h2 style="font-size: 20px; color: #003366; margin-bottom: 10px;">PROJECTS</h2>
-            <div style="margin-bottom: 15px;">
-                <h3 style="font-size: 18px; color: #333333; margin-bottom: 5px;">School Student Registration Management System</h3>
-                <ul style="padding-left: 20px; line-height: 1.6;">
-                    <li>Created a Student Registration System using Spring Boot, Spring JPA, and JSP for smooth operation and interface.</li>
-                    <li>Added features for managing student records like registration, updates, and deletion using Spring Boot and Spring JPA.</li>
-                    <li>Used Oracle Database to design and maintain the database, ensuring data accuracy.</li>
-                    <li>Made the front-end user-friendly and responsive with HTML and CSS.</li>
+        <div class="section">
+            <h2 class="section-title">LANGUAGES</h2>
+            <div class="section-content">
+                <ul class="languages-list">
+                    <li>English</li>
+                    <li>Telugu</li>
+                    <li>Hindi</li>
                 </ul>
             </div>
-            <div style="margin-bottom: 15px;">
-                <h3 style="font-size: 18px; color: #333333; margin-bottom: 5px;">Login Web Page Development</h3>
-                <ul style="padding-left: 20px; line-height: 1.6;">
-                    <li>Built a user-friendly login page using HTML and CSS for the front end.</li>
-                    <li>Developed authentication and registration features with Spring Boot and Spring JPA, connecting to an Oracle Database.</li>
-                    <li>Used Spring Security for secure login and Spring Data JPA to handle database interactions.</li>
-                    <li>Applied JavaBeans and DAO patterns for clean and maintainable code.</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div style="margin-bottom: 30px;">
-            <h2 style="font-size: 20px; color: #003366; margin-bottom: 10px;">EDUCATION</h2>
-            <div style="margin-bottom: 10px;">
-                <p style="line-height: 1.6; margin-bottom: 5px;"><strong>Bachelor of Technology - Mechanical Engineering</strong>, Sagi Ramakrishnam Raju Engineering College (2019 - 2023)</p>
-                <p style="line-height: 1.6; margin-left: 15px;">• 7.2 CGPA</p>
-                <p style="line-height: 1.6; margin-left: 15px;">Bhimavaram, India</p>
-            </div>
-            <div style="margin-bottom: 10px;">
-                <p style="line-height: 1.6; margin-bottom: 5px;"><strong>Intermediate - MPC</strong>, Aditya Junior College (2017 - 2019)</p>
-                <p style="line-height: 1.6; margin-left: 15px;">• 9.57 GPA</p>
-                <p style="line-height: 1.6; margin-left: 15px;">Palakollu, India</p>
-            </div>
-            <div style="margin-bottom: 10px;">
-                <p style="line-height: 1.6; margin-bottom: 5px;"><strong>SSC/10th</strong>, SunShine School (2016 - 2017)</p>
-                <p style="line-height: 1.6; margin-left: 15px;">• 8.5 GPA</p>
-                <p style="line-height: 1.6; margin-left: 15px;">Palakollu, India</p>
-            </div>
-        </div>
-        
-        <div style="margin-bottom: 30px;">
-            <h2 style="font-size: 20px; color: #003366; margin-bottom: 10px;">CERTIFICATIONS</h2>
-            <ul style="padding-left: 20px; line-height: 1.6;">
-                <li><strong><a href="https://drive.google.com/file/d/1sEHmxiG86-Vbv114jER6ypNQcmVHaVUC/view?usp=drive_link" target="_blank" style="color: #003366; text-decoration: none;">Certification on Java Full Stack</a></strong></li>
-                <li><strong><a href="https://drive.google.com/file/d/1t4JdJPAXxJr9nVOK5mRqqSEjjCuhFLuW/view?usp=sharing" target="_blank" style="color: #003366; text-decoration: none;">Java Full Stack Developer Internship</a></strong></li>
-                <li><strong><a href="https://drive.google.com/file/d/1U2j10f2IBbzqH9-UYJdDg5H4h_P1WwMY/view?usp=drive_link" target="_blank" style="color: #003366; text-decoration: none;">Software Development Intern</a></strong></li>
-            </ul>
-        </div>
-        
-        <div style="margin-bottom: 30px;">
-            <h2 style="font-size: 20px; color: #003366; margin-bottom: 10px;">COURSES</h2>
-            <p style="line-height: 1.6;"><strong>Java Full Stack</strong>, Naresh I Technologies</p>
-            <p style="line-height: 1.6; margin-left: 15px;">2023 - 2024 | Hyderabad, India</p>
-            <p style="line-height: 1.6; margin-left: 15px;">Comprehensive training in full stack development focusing on Java, including front-end (HTML, CSS, JavaScript) and back-end (Java, SpringBoot, Hibernate, SQL) technologies. Built dynamic web applications with hands-on projects.</p>
-        </div>
-        
-        <div style="margin-bottom: 30px;">
-            <h2 style="font-size: 20px; color: #003366; margin-bottom: 10px;">LANGUAGES</h2>
-            <ul style="padding-left: 20px; line-height: 1.6;">
-                <li><strong>English</strong></li>
-                <li><strong>Telugu</strong></li>
-                <li><strong>Hindi</strong></li>
-            </ul>
         </div>
     </div>
 </body>
